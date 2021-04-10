@@ -1,4 +1,4 @@
-{%- if theme.footer.runtime.enable %}
+{%- if theme.footer.powered.enable %}
   <div id="site-runtime">
     <span class="post-meta-item-icon">
       <i class="fa fa-clock-o"></i>
@@ -26,8 +26,8 @@
       var days = hours * 24;
       var years = days * 365;
 
-      {%- if theme.footer.runtime.start %}
-        start = new Date("{{ theme.footer.runtime.start }}");
+      {%- if theme.footer.powered.start %}
+        start = new Date("{{ theme.footer.powered.start }}");
       {%- endif %}
       var now = new Date();
       var year = now.getFullYear();
@@ -47,7 +47,7 @@
       document.getElementById("runtime").innerHTML = "Powered by Hexo & NexT on Docker： " + diffYears + " 年 " + diffDays + " 日 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒 ";
     }
 
-    var showOnMobile = {{ theme.footer.runtime.mobile }};
+    var showOnMobile = {{ theme.footer.powered.mobile }};
     var openOnPC = isPC();
     var start = new Date();
     siteTime(openOnPC, start);

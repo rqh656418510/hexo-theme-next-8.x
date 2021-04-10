@@ -47,7 +47,8 @@
         <div class="post-meta-container">
           {{ partial('_partials/post/post-meta.njk') }}
 
-          {%- if post.description and (not theme.excerpt_description or not is_index) %}
+          <!-- 隐藏显示文章的描述摘录 -->
+          {%- if post.description and (theme.excerpt_description and not is_index) %}
             <div class="post-description">{{ post.description }}</div>
           {%- endif %}
         </div>
@@ -119,7 +120,8 @@
           {%- set tag_indicate = '<i class="fa fa-tag"></i>' if theme.tag_icon else '#' %}
           <div class="post-tags">
             {%- for tag in post.tags.toArray() %}
-              <a href="{{ url_for(tag.path) }}" rel="tag">{{ tag_indicate }} {{ tag.name }}</a>
+              <!-- 更改文章底部标签的样式 -->
+              <a href="{{ url_for(tag.path) }}" rel="tag"> <i class="fa fa-tag"></i> {{ tag.name }}</a>
             {%- endfor %}
           </div>
         {%- endif %}

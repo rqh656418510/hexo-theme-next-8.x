@@ -84,6 +84,7 @@ menu:
   archives: /archives/ || fa fa-archive
   tags: /tags/ || fa fa-tags
   search: /search || fa fa-search
+  commentManage: https://waline.techgrow.cn:9360/ui/login || fa fa-comment
   #about: /about/ || fa fa-user
   #categories: /categories/ || fa fa-th
   #schedule: /schedule/ || fa fa-calendar
@@ -109,7 +110,7 @@ sidebar:
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
   # Pisces | Gemini: 240
-  width: 240
+  width: 300
 
   # Sidebar Display (only for Muse | Mist), available values:
   #  - post    expand on posts automatically. Default.
@@ -215,7 +216,15 @@ footer:
   copyright:
 
   # Powered by Hexo & NexT
-  powered: false
+  powered:
+    enable: true
+    # The time of the site started running. If not defined, current time of local time zone will be used.
+    # You can specify the time zone by adding the `+HOURS` or `-HOURS` format time zone.
+    # If not specify the time zone, it will use `+0000` as default.
+    # ex: "2015-06-08 07:24:13 +0800", `+0800` specify that it is the time in the East Eight Time Zone.
+    start: 2018-12-27 08:00:00 +0800
+    # Whether to show on the mobile side
+    mobile: false
 
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
   beian:
@@ -228,21 +237,17 @@ footer:
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url:
 
-  # Site Runtime
-  runtime:
-    enable: true
-    # The time of the site started running. If not defined, current time of local time zone will be used.
-    # You can specify the time zone by adding the `+HOURS` or `-HOURS` format time zone.
-    # If not specify the time zone, it will use `+0000` as default.
-    # ex: "2015-06-08 07:24:13 +0800", `+0800` specify that it is the time in the East Eight Time Zone.
-    start: 2018-12-27 08:00:00 +0800
-    # Whether to show on the mobile side
-    mobile: false
 
 # ---------------------------------------------------------------
 # Post Settings
 # See: https://theme-next.js.org/docs/theme-settings/posts
 # ---------------------------------------------------------------
+
+# Display site details in all pages
+display_site_details: false
+
+# Display site categories in all pages
+display_site_categories: false
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: false
@@ -258,7 +263,7 @@ post_meta:
   updated_at:
     enable: true
     another_day: true
-  categories: true
+  categories: false
 
 # Post wordcount display settings
 # Dependencies: https://github.com/next-theme/hexo-word-counter
@@ -368,11 +373,11 @@ codeblock:
   # Code Highlight theme
   # All available themes: https://theme-next.js.org/highlight/
   theme:
-    light: default
-    dark: tomorrow-night
+    light: atelier-forest-light
+    dark: androidstudio
   prism:
     light: prism
-    dark: prism-dark
+    dark: prism-atom-dark
   # Add copy button on codeblock
   copy_button:
     enable: true
@@ -408,8 +413,8 @@ bookmark:
 
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
-  enable: false
-  permalink: https://github.com/yourname
+  enable: true
+  permalink: https://github.com/rqh656418510
   title: Follow me on GitHub
 
 
@@ -861,15 +866,15 @@ motion:
 # Progress bar in the top during page loading.
 # For more information: https://github.com/rstacruz/nprogress
 nprogress:
-  enable: false
+  enable: true
   spinner: true
 
 # Canvas ribbon
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
-  size: 300 # The width of the ribbon
-  alpha: 0.6 # The transparency of the ribbon
+  enable: true
+  size: 200 # The width of the ribbon
+  alpha: 0.5 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 

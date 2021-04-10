@@ -1,0 +1,10 @@
+<script>
+$(window).load(function () {
+
+  <!-- 默认隐藏显示Aplayer的歌词 -->
+  {%- if theme.aplayer.enable %}
+    $(".aplayer\\-icon.aplayer\\-icon\\-lrc").trigger("click");
+  {%- endif %}
+
+});
+</script>

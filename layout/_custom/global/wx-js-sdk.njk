@@ -1,0 +1,104 @@
+{%- if config.wx_js_sdk and config.wx_js_sdk.enable %}
+  <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+  <script>
+    function getTitle(){
+        var title = $("meta[property='og:title']");
+        return title ? title.attr("content") : "";
+    }
+
+    function getDesc(){
+        var desc = $("meta[property='og:description']");
+        return desc ? desc.attr("content") : "";
+    }
+
+    function randomString(len) {
+        var chars = 'ABCDEFGHJKMNPQRSTWXYZabcdefhijkmnprstwxyz2345678';
+        var tempLen = chars.length, tempStr = '';
+        for (var i = 0; i < len; ++i) {
+            tempStr += chars.charAt(Math.floor(Math.random() * tempLen));
+        }
+        return tempStr;
+    }
+
+    function initWx(config) {
+        wx.config({
+            debug: false,
+            appId: config.appId,
+            nonceStr: config.nonceStr,
+            signature: config.signature,
+            timestamp: config.timestamp,
+            jsApiList: ['checkJsApi', 'onMenuShareTimeline', 'onMenuShareAppMessage', 'onMenuShareQQ']
+        });
+
+        wx.ready(function () {
+
+           // 获取“分享到朋友圈”按钮点击状态及自定义分享内容接口
+           wx.onMenuShareTimeline({
+              title: config.title,
+              link: config.link,
+              imgUrl: config.imgUrl,
+              success: function () {
+
+              }
+            });
+
+            // 获取“分享给朋友”按钮点击状态及自定义分享内容接口
+            wx.onMenuShareAppMessage({
+              title: config.title,
+              desc: config.desc,
+              link: config.link,
+              imgUrl: config.imgUrl,
+              type: 'link',
+              dataUrl: '',
+              success: function () {
+
+              }
+            });
+
+            // 获取“分享到QQ”按钮点击状态及自定义分享内容接口
+            wx.onMenuShareQQ({
+              title: config.title,
+              desc: config.desc,
+              link: config.link,
+              imgUrl: config.imgUrl,
+              success: function () {
+
+              },
+              cancel: function () {
+
+              }
+            });
+        });
+
+        wx.error(function (res) {
+
+        });
+    }
+
+    $(function () {
+        var desc = getDesc();
+        var title = getTitle();
+        var nonceStr = randomString(16);
+        var timestamp = new Date().getTime();
+        var currentUrl = window.location.href;
+        var apiUrl = '{{ config.wx_js_sdk.apiUrl }}';
+        var url = apiUrl + "?url=" + currentUrl + "&noncestr=" + nonceStr + "&timestamp=" + timestamp;
+        $.getJSON(url, function (result) {
+            initWx({
+                desc: desc,
+                title: title,
+                link: currentUrl,
+                nonceStr: nonceStr,
+                timestamp: timestamp,
+                signature: result.data,
+                appId: '{{ config.wx_js_sdk.appId }}',
+                imgUrl: '{{ config.wx_js_sdk.imgUrl }}'
+            });
+        })
+    });
+  </script>
+
+  <!-- 微信分享链接时显示的默认缩略图片 -->
+  <div style="display:none;"><img src="{{ config.wx_js_sdk.imgUrl }}" alt=""></div>
+
+{%- endif %}

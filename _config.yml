@@ -668,16 +668,16 @@ isso: # <data_isso>
 # For more information: https://waline.js.org, https://github.com/lizheming/waline
 waline:
   enable: true
-  serverURL: https://waline.techgrow.cn:9360                        # Waline server address url
-  placeholder: '支持匿名评论啦~~若希望作者联系你，建议登录评论哦~~'         # Comment box placeholder
-  avatar: retro                                                     # Gravatar style
-  meta: [nick, mail, link]                                          # Custom comment header
-  pageSize: 10                                                      # Pagination size
-  lang: zh-cn                                                       # Language, available values: en, zh-cn
-  visitor: false                                                    # Article reading statistic
-  comment_count: true                                               # If false, comment count will only be displayed in post page, not in home page
-  requiredFields: []                                                # Set required fields: [nick] | [nick, mail]
-  libUrl:                                                           # Set custom library cdn url
+  serverURL: https://waline.techgrow.cn:9360                                              # Waline server address url
+  placeholder: '~~支持匿名评论啦~~若希望作者联系你，建议登录评论或者在上方留下邮箱哦~~'              # Comment box placeholder
+  avatar: retro                                                                           # Gravatar style
+  meta: [nick, mail, link]                                                                # Custom comment header
+  pageSize: 10                                                                            # Pagination size
+  lang: zh-cn                                                                             # Language, available values: en, zh-cn
+  visitor: false                                                                          # Article reading statistic
+  comment_count: true                                                                     # If false, comment count will only be displayed in post page, not in home page
+  requiredFields: []                                                                      # Set required fields: [nick] | [nick, mail]
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@0.14.8/dist/Waline.min.js           # Set custom library cdn url
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services

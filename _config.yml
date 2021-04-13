@@ -513,6 +513,7 @@ baidu_push: true
 # Music Player
 aplayer:
   enable: true
+  mobile: false
 
 # Math Formulas Render Support
 # Warning: Please install / uninstall the relevant renderer according to the documentation.

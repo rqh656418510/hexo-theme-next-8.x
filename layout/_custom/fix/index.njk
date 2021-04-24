@@ -21,7 +21,7 @@ var aplayerEnable = {{ theme.aplayer.enable }};
 
 $(document).ready(function(){
   if(aplayerEnable){
-    if(!openOnMobile || (openOnMobile && showOnMobile)){
+    if(!openOnMobile || showOnMobile){
       $("#aplayer").css("display", "block");
     }
   }

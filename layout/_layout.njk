@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="{{ page.lang }}">
 <head>
   {{ partial('_partials/head/head.njk', {}, {cache: theme.cache.enable}) }}
@@ -15,7 +16,7 @@
 <body itemscope itemtype="http://schema.org/WebPage"{% if theme.motion.enable %} class="use-motion"{% endif %}>
 
   <!-- Global Impove -->
-  {%- include '_custom/global/index.njk' -%}
+  {{ partial('_custom/global/index.njk') }}
 
   <div class="headband"></div>
 
@@ -61,7 +62,7 @@
   {%- endif %}
 
   <!-- Fix Scripts -->
-  {%- include '_custom/fix/index.njk' -%}
+  {{ partial('_custom/fix/index.njk') }}
 
 </body>
 </html>

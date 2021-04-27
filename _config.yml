@@ -223,7 +223,7 @@ footer:
     # You can specify the time zone by adding the `+HOURS` or `-HOURS` format time zone.
     # If not specify the time zone, it will use `+0000` as default.
     # ex: "2015-06-08 07:24:13 +0800", `+0800` specify that it is the time in the East Eight Time Zone.
-    start: 2018-12-27 08:00:00 +0800
+    start: "2018-12-27 08:00:00"
     # Whether to show on the mobile side
     mobile: false
 

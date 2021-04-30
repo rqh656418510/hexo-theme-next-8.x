@@ -52,14 +52,14 @@ darkmode_js:
   right: '32px' # default: '32px'
   left: 'unset' # default: 'unset'
   time: '0.5s' # default: '0.3s'
-  mixColor: '#fff' # default: '#fff'
-  backgroundColor: '#fff'  # default: '#fff'
+  mixColor: 'transparent' # default: '#fff'
+  backgroundColor: 'transparent'  # default: '#fff'
   buttonColorDark: '#100f2c'  # default: '#100f2c'
   buttonColorLight: '#dcdcdc' # default: '#fff'
   saveInCookies: true # default: true
-  label: '' # default: ''
+  label: '🌓' # default: ''
   autoMatchOsTheme: true # default: true
-  libUrl: https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js
+  libUrl: # Set custom library cdn url for Darkmode.js
 
 
 # ---------------------------------------------------------------

@@ -56,6 +56,7 @@ darkmode_js:
   backgroundColor: 'transparent'  # default: '#fff'
   buttonColorDark: '#282828'  # default: '#100f2c'
   buttonColorLight: '#fff' # default: '#fff'
+  isActivated: false # default false
   saveInCookies: true # default: true
   label: '🌓' # default: ''
   autoMatchOsTheme: true # default: true

@@ -705,7 +705,7 @@ waline:
   visitor: false                                                                              # Article reading statistic
   comment_count: true                                                                         # If false, comment count will only be displayed in post page, not in home page
   requiredFields: []                                                                          # Set required fields: [nick] | [nick, mail]
-  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@0.15.0/dist/Waline.min.js               # Set custom library cdn url
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@0.16.1/dist/Waline.min.js               # Set custom library cdn url
   avatarCDN: https://sdn.geekzu.org/avatar/                                                   # Set custom gravatar cdn url
 
 

@@ -698,6 +698,7 @@ waline:
   enable: true
   serverURL: https://waline.techgrow.cn:9360                                                  # Waline server address url
   placeholder: '支持匿名评论啦，若希望及时收到作者的反馈，建议登录评论或者在上方留下邮箱哦 (๑•̀ㅂ•́)و✧'     # Comment box placeholder
+  dark: 'body.darkmode--activated'                                                            # Dark mode
   avatar: retro                                                                               # Gravatar style
   meta: [nick, mail, link]                                                                    # Custom comment header
   pageSize: 10                                                                                # Pagination size

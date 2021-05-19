@@ -700,16 +700,17 @@ waline:
   enable: true
   serverURL: https://waline.techgrow.cn:9360                                                  # Waline server address url
   placeholder: '支持匿名评论啦，若希望及时收到作者的反馈，建议登录评论或者在上方留下邮箱哦 (๑•̀ㅂ•́)و✧'     # Comment box placeholder
-  dark: 'body.darkmode--activated'                                                            # Dark mode
+  dark: 'body.darkmode--activated'                                                            # Dark mode css selector, for more information: https://waline.js.org/client/basic.html#dark
   avatar: retro                                                                               # Gravatar style
   meta: [nick, mail, link]                                                                    # Custom comment header
   pageSize: 10                                                                                # Pagination size
   lang: zh-cn                                                                                 # Language, available values: en, zh-cn
   visitor: false                                                                              # Article reading statistic
   comment_count: true                                                                         # If false, comment count will only be displayed in post page, not in home page
-  requiredFields: []                                                                          # Set required fields: [nick] | [nick, mail]
+  requiredMeta: []                                                                            # Set required fields: [nick] | [nick, mail]
   libUrl: https://cdn.jsdelivr.net/npm/@waline/client@0.17.0/dist/Waline.min.js               # Set custom library cdn url
   avatarCDN: https://sdn.geekzu.org/avatar/                                                   # Set custom gravatar cdn url
+  copyright: false                                                                            # Display the footer copyright information
 
 
 # ---------------------------------------------------------------

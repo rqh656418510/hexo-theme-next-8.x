@@ -1,0 +1,16 @@
+<div class="contactme">
+  <div class="social-list">
+    {%- for name, value in theme.contact_me %}
+      {%- set link = value.split('||')[0] | trim %}
+      {%- set icon = value.split('||')[1] | trim if value.split('||')[1] else '' %}
+      {%- set desc = value.split('||')[2] | trim if value.split('||')[2] else '' %}
+
+      <div class="social-item">
+        <span class="icon"><i class="{{ icon }}"></i></span>
+        <span class="label">{{ desc }}</span>
+        <br>
+        <img src ="{{ url_for(link) }}">
+      </div>
+    {%- endfor %}
+  </div>
+</div>

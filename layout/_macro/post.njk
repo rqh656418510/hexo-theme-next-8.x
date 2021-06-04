@@ -116,6 +116,10 @@
           {{ partial('_partials/post/post-followme.njk', {}, {cache: theme.cache.enable}) }}
         {%- endif %}
 
+        {%- if theme.contact_me and not post.uncontact %}
+          {{ partial('_partials/post/post-contactme.njk', {}, {cache: theme.cache.enable}) }}
+        {%- endif %}
+
         {%- if post.tags and post.tags.length %}
           {%- set tag_indicate = '<i class="fa fa-tag"></i>' if theme.tag_icon else '#' %}
           <div class="post-tags">

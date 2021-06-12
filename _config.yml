@@ -708,9 +708,11 @@ waline:
   visitor: false                                                                              # Article reading statistic
   comment_count: true                                                                         # If false, comment count will only be displayed in post page, not in home page
   requiredMeta: []                                                                            # Set required fields: [nick] | [nick, mail]
-  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.2.3/dist/Waline.min.js               # Set custom library cdn url
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.2.3/dist/Waline.min.js                # Set custom waline cdn url
   avatarCDN: https://sdn.geekzu.org/avatar/                                                   # Set custom gravatar cdn url
   copyright: false                                                                            # Display the footer copyright information
+  qiniuDomain: https://qiniu.techgrow.cn                                                      # The custom domain for qiniu
+  qiniuTokenUrl: https://api.techgrow.cn:9080/qiniu/sdk/token                                 # The url to get the qiniu token
 
 
 # ---------------------------------------------------------------

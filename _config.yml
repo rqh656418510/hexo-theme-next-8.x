@@ -712,7 +712,7 @@ waline:
   avatarCDN: https://sdn.geekzu.org/avatar/                                                   # Set custom gravatar cdn url
   copyright: false                                                                            # Display the footer copyright information
   qiniuDomain: https://qiniu.techgrow.cn                                                      # The custom domain for qiniu
-  qiniuTokenUrl: https://api.techgrow.cn:9080/qiniu/sdk/token                                 # The url to get the qiniu token
+  qiniuTokenUrl: https://api.techgrow.cn:9080/qiniu/sdk/token                                 # The url to get qiniu token
 
 
 # ---------------------------------------------------------------

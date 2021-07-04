@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-next",
-  "version": "8.5.0",
+  "version": "8.6.1",
   "description": "Elegant and powerful theme for Hexo.",
   "main": "package.json",
   "files": [
@@ -32,13 +32,13 @@
   },
   "homepage": "https://theme-next.js.org",
   "devDependencies": {
-    "@next-theme/eslint-config": "0.0.2",
+    "@next-theme/eslint-config": "0.0.3",
     "chai": "4.3.4",
-    "eslint": "7.27.0",
+    "eslint": "7.29.0",
     "hexo": "5.4.0",
     "hexo-renderer-marked": "4.0.0",
     "js-yaml": "4.1.0",
-    "mocha": "8.4.0",
+    "mocha": "9.0.1",
     "nyc": "15.1.0",
     "stylint": "2.0.0"
   }

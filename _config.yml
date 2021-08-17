@@ -706,7 +706,7 @@ waline:
   qiniuDebug: false                                                                           # print the error message of the picture uploaded by qiniu
   qiniuDomain: https://qiniu.techgrow.cn                                                      # The custom domain for qiniu, e.g https://qiniu.example.cn
   qiniuTokenUrl: https://api.techgrow.cn:9080/qiniu/sdk/token/upload                          # The api to get qiniu upload token, e.g https://api.example.cn/qiniu/sdk/token/upload
-  allowUploadImage: true                                                                      # Allow upload image
+  allowUploadImage: true                                                                      # Allow upload picture
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services

@@ -133,8 +133,8 @@ hexo.extend.filter.register('after_generate', () => {
   }
 
   // Others
-  if (!theme.nprogress.enable) {
-    hexo.route.remove('js/third-party/nprogress.js');
+  if (!theme.fancybox) {
+    hexo.route.remove('js/third-party/fancybox.js');
   }
 
   if (!theme.quicklink.enable) {

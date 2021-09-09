@@ -14,6 +14,7 @@ hexo.extend.helper.register('next_config', function() {
     root      : config.root,
     images    : url_for(theme.images),
     scheme    : theme.scheme,
+    darkmode  : theme.darkmode,
     version   : this.next_version,
     exturl    : theme.exturl,
     sidebar   : theme.sidebar,
@@ -23,6 +24,7 @@ hexo.extend.helper.register('next_config', function() {
     lazyload  : theme.lazyload,
     pangu     : theme.pangu,
     comments  : theme.comments,
+    stickytabs: theme.tabs.sticky,
     motion    : theme.motion,
     prism     : config.prismjs.enable && !config.prismjs.preprocess,
     i18n      : {

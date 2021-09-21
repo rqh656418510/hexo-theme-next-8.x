@@ -693,14 +693,13 @@ waline:
   serverURL: https://waline.techgrow.cn:9360                                                               # Waline server address url
   placeholder: '支持匿名评论啦，若希望及时收到作者的反馈，建议登录评论或者在上方的邮箱输入框留下邮箱地址哦 (๑•̀ㅂ•́)و✧'     # Comment box placeholder
   dark: 'body.darkmode--activated'                                                                         # Dark mode css selector, for more information: https://waline.js.org/client/basic.html#dark
-  avatar: robohash                                                                                         # Avatar style
   meta: [nick, mail, link]                                                                                 # Custom comment header
   pageSize: 10                                                                                             # Pagination size
   lang: zh-cn                                                                                              # Language, available values: en, zh-cn
   visitor: false                                                                                           # Article reading statistic
   comment_count: true                                                                                      # If false, comment count will only be displayed in post page, not in home page
   requiredMeta: []                                                                                         # Set required fields: [nick] | [nick, mail]
-  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.3.4/dist/Waline.min.js                             # Set custom waline cdn url
+  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.3.6/dist/Waline.min.js                             # Set custom waline cdn url
   copyright: false                                                                                         # Display the footer copyright information
   qiniuDebug: false                                                                                        # print the error message of the picture uploaded by qiniu
   qiniuDomain: https://qiniu.techgrow.cn                                                                   # The custom domain for qiniu, e.g https://qiniu.example.cn

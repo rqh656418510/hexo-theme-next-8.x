@@ -701,7 +701,6 @@ waline:
   comment_count: true                                                                                      # If false, comment count will only be displayed in post page, not in home page
   requiredMeta: []                                                                                         # Set required fields: [nick] | [nick, mail]
   libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.3.4/dist/Waline.min.js                             # Set custom waline cdn url
-  avatarCDN:                                                                                               # Set custom avatar cdn url
   copyright: false                                                                                         # Display the footer copyright information
   qiniuDebug: false                                                                                        # print the error message of the picture uploaded by qiniu
   qiniuDomain: https://qiniu.techgrow.cn                                                                   # The custom domain for qiniu, e.g https://qiniu.example.cn

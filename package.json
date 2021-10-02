@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-next",
-  "version": "8.7.1",
+  "version": "8.8.0",
   "description": "Elegant and powerful theme for Hexo.",
   "main": "package.json",
   "files": [
@@ -38,7 +38,7 @@
     "hexo": "5.4.0",
     "hexo-renderer-marked": "4.1.0",
     "js-yaml": "4.1.0",
-    "mocha": "9.1.1",
+    "mocha": "9.1.2",
     "nyc": "15.1.0",
     "stylint": "2.0.0"
   }

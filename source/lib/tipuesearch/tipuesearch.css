@@ -86,7 +86,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-     font: 300 20px/1.4 Merriweather, serif;
+     font: 300 15px/1.4 Merriweather, serif;
 	color: #111;
 }
 .tipue_search_content_title a
@@ -100,7 +100,7 @@ http://www.tipue.com/search
 }
 .tipue_search_result
 {
-     padding-top: 27px;
+     padding-top: 20px;
 }
 #tipue_search_results_count, .tipue_search_content_debug
 {
@@ -142,7 +142,7 @@ http://www.tipue.com/search
 }
 .tipue_search_content_text
 {
-     font: 300 15px/1.6 Merriweather, serif;
+     font: 300 13px/1.6 Merriweather, serif;
 	color: #333;
      word-wrap: break-word;
      hyphens: auto;

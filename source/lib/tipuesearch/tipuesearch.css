@@ -86,7 +86,8 @@ http://www.tipue.com/search
 }
 .tipue_search_content_title
 {
-     font: 300 15px/1.4 Merriweather, serif;
+     font-family: Lato,'PingFang SC','Microsoft YaHei',sans-serif;
+     font-size: 16px;
 	color: #111;
 }
 .tipue_search_content_title a
@@ -100,7 +101,7 @@ http://www.tipue.com/search
 }
 .tipue_search_result
 {
-     padding-top: 20px;
+     padding-top: 8px;
 }
 #tipue_search_results_count, .tipue_search_content_debug
 {
@@ -116,9 +117,10 @@ http://www.tipue.com/search
 }
 .tipue_search_content_url, .tipue_search_note, .tipue_search_related, #tipue_search_error, #tipue_search_replace
 {
-     font: 300 16px/1.4 Merriweather, serif;
+     font-family: Lato,'PingFang SC','Microsoft YaHei',sans-serif;
+     font-size: 13px;
      color: #666;
-     padding-top: 7px;
+     padding-top: 0px;
      word-wrap: break-word;
      hyphens: auto;
 }
@@ -142,11 +144,12 @@ http://www.tipue.com/search
 }
 .tipue_search_content_text
 {
-     font: 300 13px/1.6 Merriweather, serif;
+     font-family: Lato,'PingFang SC','Microsoft YaHei',sans-serif;
+     font-size: 13px;
 	color: #333;
      word-wrap: break-word;
      hyphens: auto;
-     margin-top: 9px;
+     margin-top: 0px;
 }
 .tipue_search_content_bold
 {

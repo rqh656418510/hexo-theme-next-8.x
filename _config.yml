@@ -101,10 +101,11 @@ creative_commons:
 # External url should start with http:// or https://
 menu:
   home: / || fa fa-home
-  archives: /archives/ || fa fa-archive
+  
   tags: /tags/ || fa fa-tags
   search: /search || fa fa-search
   commentManage: https://waline.techgrow.cn:9360/ui/login?lng=zh-cn || fa fa-comment
+  #archives: /archives/ || fa fa-archive
   #about: /about/ || fa fa-user
   #categories: /categories/ || fa fa-th
   #schedule: /schedule/ || fa fa-calendar

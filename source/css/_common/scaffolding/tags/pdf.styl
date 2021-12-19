@@ -2,6 +2,7 @@ if (hexo-config('pdf.enable')) {
   .pdfobject-container {
     iframe, embed {
       height: convert(hexo-config('pdf.height'));
+      isolation: isolate;
       width: 100%;
     }
   }

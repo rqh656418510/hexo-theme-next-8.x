@@ -21,17 +21,17 @@ var openOnMobile = isMobile();
 var showOnMobile = {{ theme.aplayer.mobile }};
 var aplayerEnable = {{ theme.aplayer.enable }};
 
-$(document).ready(function(){
+jQuery(document).ready(function(){
   if(aplayerEnable){
     if(!openOnMobile || showOnMobile){
-      $("#aplayer").css("display", "block");
+      jQuery("#aplayer").css("display", "block");
     }
   }
 });
 
-$(window).on('load', function() {
+jQuery(window).on('load', function() {
   if(aplayerEnable){
-    $(".aplayer\\-icon.aplayer\\-icon\\-lrc").trigger("click");
+    jQuery(".aplayer\\-icon.aplayer\\-icon\\-lrc").trigger("click");
   }
 });
 </script>

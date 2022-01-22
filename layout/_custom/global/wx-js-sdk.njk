@@ -2,12 +2,12 @@
   <script src="https://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
   <script>
     function getTitle(){
-        var title = $("meta[property='og:title']");
+        var title = jQuery("meta[property='og:title']");
         return title ? title.attr("content") : "";
     }
 
     function getDesc(){
-        var desc = $("meta[property='og:description']");
+        var desc = jQuery("meta[property='og:description']");
         return desc ? desc.attr("content") : "";
     }
 
@@ -75,7 +75,7 @@
         });
     }
 
-    $(function () {
+    jQuery(function () {
         var desc = getDesc();
         var title = getTitle();
         var nonceStr = randomString(16);
@@ -83,7 +83,7 @@
         var currentUrl = window.location.href;
         var apiUrl = '{{ config.wx_js_sdk.apiUrl }}';
         var url = apiUrl + "?url=" + currentUrl + "&noncestr=" + nonceStr + "&timestamp=" + timestamp;
-        $.getJSON(url, function (result) {
+        jQuery.getJSON(url, function (result) {
             initWx({
                 desc: desc,
                 title: title,

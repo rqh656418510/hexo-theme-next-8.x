@@ -8,14 +8,14 @@ var mp3_data = {};
 var fm_data_enable = false;
 
 try {
-  $.ajax({
+  jQuery.ajax({
     url: '/music/data/fm-data.json',
     async: true,
     dataType: "json",
     success: function(data) {
       fm_data = data;
 
-      $.ajax({
+      jQuery.ajax({
         url: '/music/data/mp3-data.json',
         async: true,
         dataType: "json",

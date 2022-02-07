@@ -696,7 +696,7 @@ waline:
   enable: true
   login: ''                                                                                                # Force waline client to login, available value: enable, disable, force
   serverURL: https://waline.techgrow.cn:9360                                                               # Waline server address url
-  placeholder: '支持匿名评论啦，若希望及时收到作者的反馈，建议登录评论或者在上方的邮箱输入框留下邮箱地址哦 (๑•̀ㅂ•́)و✧'     # Comment box placeholder
+  placeholder: '支持匿名评论啦，若希望及时收到作者的反馈，建议登录评论或者在上方的邮箱输入框留下邮箱地址哦 (๑•̀ㅂ•́)و✧'    # Comment box placeholder
   dark: 'body.darkmode--activated'                                                                         # Dark mode css selector, for more information: https://waline.js.org/client/basic.html#dark
   meta: [nick, mail, link]                                                                                 # Custom comment header
   pageSize: 10                                                                                             # Pagination size
@@ -710,7 +710,6 @@ waline:
   qiniuDomain: https://qiniu.techgrow.cn                                                                   # The custom domain for qiniu, e.g https://qiniu.example.cn
   qiniuTokenUrl: https://api.techgrow.cn:9080/qiniu/sdk/token/upload                                       # The api to get qiniu upload token, e.g https://api.example.cn/qiniu/sdk/token/upload
   allowUploadImage: true                                                                                   # Allow upload picture
-  avatar: robohash                                                                                         # Avatar style
 
 # ---------------------------------------------------------------
 # Post Widgets & Content Sharing Services

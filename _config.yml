@@ -60,7 +60,7 @@ darkmode_js:
   saveInCookies: true # default: true
   label: '🌓' # default: ''
   autoMatchOsTheme: true # default: true
-  libUrl: # Set custom library cdn url for Darkmode.js
+  libUrl: 'https://unpkg.com/darkmode-js@1.5.7/lib/darkmode-js.min.js' # Set custom library cdn url for Darkmode.js
 
 
 # ---------------------------------------------------------------
@@ -711,7 +711,7 @@ waline:
   visitor: false                                                                                           # Article reading statistic
   comment_count: true                                                                                      # If false, comment count will only be displayed in post page, not in home page
   requiredMeta: []                                                                                         # Set required fields: [nick] | [nick, mail]
-  libUrl: https://cdn.jsdelivr.net/npm/@waline/client@1.5.4/dist/Waline.min.js                             # Set custom waline cdn url
+  libUrl: https://unpkg.com/@waline/client@1.5.4/dist/Waline.min.js                                        # Set custom waline cdn url
   copyright: false                                                                                         # Display the footer copyright information
   qiniuDebug: false                                                                                        # print the error message of the picture uploaded by qiniu
   qiniuDomain: https://qiniu.techgrow.cn                                                                   # The custom domain for qiniu, e.g https://qiniu.example.cn

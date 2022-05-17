@@ -708,10 +708,10 @@ waline:
   serverURL: https://waline.techgrow.cn:9360
 
   # Waline library CDN url, you can set this to your preferred CDN
-  libUrl: https://unpkg.com/@waline/client@2.3.2/dist/waline.js
+  libUrl: https://unpkg.com/@waline/client@2.5.0/dist/waline.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
-  cssUrl: https://unpkg.com/@waline/client@2.3.2/dist/waline.css
+  cssUrl: https://unpkg.com/@waline/client@2.5.0/dist/waline.css
 
   # Custom locales
   locale:

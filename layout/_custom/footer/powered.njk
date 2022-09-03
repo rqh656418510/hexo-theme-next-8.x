@@ -44,7 +44,7 @@
       var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
       var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
 
-      document.getElementById("runtime").innerHTML = "Powered by Hexo & NexT & Docker | " + diffYears + " 年 " + diffDays + " 日 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒 ";
+      document.getElementById("runtime").innerHTML = "Powered by Hexo & Docker | " + diffYears + " 年 " + diffDays + " 日 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒 ";
     }
 
     var showOnMobile = {{ theme.footer.powered.mobile }};

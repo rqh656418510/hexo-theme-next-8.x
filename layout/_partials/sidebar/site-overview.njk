@@ -17,25 +17,29 @@
     {%- if config.archive_dir != '/' and site.posts.length > 0 %}
       <div class="site-state-item site-state-posts">
         {%- set archive_dir = theme.menu.archives.split('||')[0] | trim if theme.menu.archives else config.archive_dir + '/' %}
-        <a href="{{ url_for(archive_dir) }}">
+        <!-- 是否启用Sidebar文章列表页的跳转链接 -->
+        {%- if theme.enable_sidebar_archives_link %}
+          <a href="{{ url_for(archive_dir) }}">
+        {%- endif %}
           <span class="site-state-item-count">{{ site.posts.length }}</span>
           <span class="site-state-item-name">{{ __('state.posts') }}</span>
-        </a>
+        {%- if theme.enable_sidebar_archives_link %}</a>{%- endif %}
       </div>
     {%- endif %}
 
-    <!-- Sidebar隐藏显示文章分类 -->
-    {%- if theme.display_site_categories and site.categories.length > 0 %}
+    <!-- Sidebar是否隐藏显示文章分类 -->
+    {%- if theme.display_sidebar_categories and site.categories.length > 0 %}
       {%- set categoriesPageQuery = site.pages.find({type: 'categories'}, {lean: true}) %}
       {%- set hasCategoriesPage = categoriesPageQuery.length > 0 %}
       <div class="site-state-item site-state-categories">
         {%- set category_dir = theme.menu.categories.split('||')[0] | trim if theme.menu.categories else config.category_dir + '/' %}
-        {%- if hasCategoriesPage %}
+        <!-- 是否启用Sidebar文章分类页的跳转链接 -->
+        {%- if hasCategoriesPage and theme.enable_sidebar_categories_link %}
           <a href="{{ url_for(category_dir) }}">
         {%- endif %}
         <span class="site-state-item-count">{{ site.categories.length }}</span>
         <span class="site-state-item-name">{{ __('state.categories') }}</span>
-        {%- if hasCategoriesPage %}</a>{% endif %}
+        {%- if hasCategoriesPage and theme.enable_sidebar_categories_link %}</a>{%- endif %}
       </div>
     {%- endif %}
 
@@ -44,12 +48,13 @@
       {%- set hasTagsPage = tagsPageQuery.length > 0 %}
       <div class="site-state-item site-state-tags">
         {%- set tag_dir = theme.menu.tags.split('||')[0] | trim if theme.menu.tags else config.tag_dir + '/' %}
-        {%- if hasTagsPage %}
-          <a href="{{ url_for(tag_dir) }}">
+        <!-- 是否启用Sidebar文章标签页的跳转链接 -->
+        {%- if hasTagsPage and theme.enable_sidebar_tags_link %}
+            <a href="{{ url_for(tag_dir) }}">
         {%- endif %}
         <span class="site-state-item-count">{{ site.tags.length }}</span>
         <span class="site-state-item-name">{{ __('state.tags') }}</span>
-        {%- if hasTagsPage %}</a>{% endif %}
+        {%- if hasTagsPage and theme.enable_sidebar_tags_link %}</a>{%- endif %}
       </div>
     {%- endif %}
   </nav>

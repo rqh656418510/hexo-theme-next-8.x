@@ -273,8 +273,17 @@ footer:
 # Display site details in all pages
 display_site_details: false
 
-# Display site categories in all pages
-display_site_categories: false
+# Display sidebar categories tab
+display_sidebar_categories: false
+
+# Enable sidebar tags link
+enable_sidebar_tags_link: false
+
+# Enable sidebar archives link
+enable_sidebar_archives_link: false
+
+# Enable sidebar categories link
+enable_sidebar_categories_link: false
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: false

@@ -10,7 +10,11 @@
     {%- if display_toc %}
       {%- if (page.encrypt) %}
         {%- set toc = toc(page.origin, {class: 'nav', list_number: page.toc.number, max_depth: page.toc.max_depth}) %}
+      {%- elif (page.tocnumber) %}
+        <!-- 局部显示目录编号（当前文章） -->
+        {%- set toc = toc(page.content, {class: 'nav', list_number: page.tocnumber, max_depth: page.toc.max_depth}) %}
       {%- else %}
+        <!-- 全局显示目录编号（全部文章） -->
         {%- set toc = toc(page.content, {class: 'nav', list_number: page.toc.number, max_depth: page.toc.max_depth}) %}
       {%- endif %}
 

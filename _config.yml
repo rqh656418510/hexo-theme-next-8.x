@@ -49,7 +49,7 @@ darkmode: false
 darkmode_js:
   enable: true
   bottom: '64px' # default: '32px'
-  right: '32px' # default: '32px'
+  right: '30px' # default: '32px'
   left: 'unset' # default: 'unset'
   time: '0.5s' # default: '0.3s'
   mixColor: 'transparent' # default: '#fff'

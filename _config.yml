@@ -285,7 +285,7 @@ enable_sidebar_archives_link: false
 enable_sidebar_categories_link: false
 
 # Use `description` in front-matter to specify post excerpt.
-excerpt_description: true
+excerpt_description: false
 
 # Read more button
 # If true, the read more button will be displayed in excerpt section.
@@ -701,9 +701,9 @@ pace:
 # Generate a ribbon in your website with HTML5 canvas.
 # For more information: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
-  size: 300 # The width of the ribbon
-  alpha: 0.6 # The transparency of the ribbon
+  enable: true
+  size: 200 # The width of the ribbon
+  alpha: 0.5 # The transparency of the ribbon
   zIndex: -1 # The display level of the ribbon
 
 

@@ -1,23 +1,28 @@
-/* This is a compiled file, you should be editing the file in the templates directory */
-.pace {
-  -webkit-pointer-events: none;
-  pointer-events: none;
+HTTP/1.1 200 Connection established
 
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 04 Apr 2023 04:56:56 GMT
+Content-Type: text/css; charset=utf-8
+Content-Length: 409
+Connection: keep-alive
+Vary: Accept-Encoding
+Access-Control-Allow-Origin: *
+Access-Control-Expose-Headers: *
+Timing-Allow-Origin: *
+Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
+Cross-Origin-Resource-Policy: cross-origin
+Vary: Accept-Encoding
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+X-JSD-Version: 1.2.4
+X-JSD-Version-Type: version
+ETag: W/"199-wBTvLYwUTTdDWieLabHuMv4YWtQ"
+Cache: MISS
+X-ID: am3-up-gc88
+X-NGINX: nginx-be
+Cache: MISS
+X-ID: cc1-hw-edge-gc18
+X-NGINX: nginx-be
+Accept-Ranges: bytes
 
-.pace-inactive {
-  display: none;
-}
-
-.pace .pace-progress {
-  background: #2299dd;
-  position: fixed;
-  z-index: 2000;
-  top: 0;
-  right: 100%;
-  width: 100%;
-  height: 2px;
-}

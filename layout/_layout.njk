@@ -29,7 +29,7 @@
       {%- endif %}
     </div>
 
-    <div class="main-inner {% block class %}{% endblock %}">
+    <div class="main-inner {% block class %}{% endblock %} {%- if not is_post() %} post-container{%- endif %}">
       {%- include '_partials/header/sub-menu.njk' -%}
       {% block content %}{% endblock %}
       {%- include '_partials/comments.njk' -%}

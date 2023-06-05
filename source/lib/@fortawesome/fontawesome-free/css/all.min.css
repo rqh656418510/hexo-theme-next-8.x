@@ -1,9 +1,8 @@
 HTTP/1.1 200 Connection established
 
 HTTP/1.1 200 OK
-Date: Tue, 04 Apr 2023 04:56:14 GMT
-Content-Type: text/css; charset=utf-8
 Connection: keep-alive
+Content-Length: 102025
 Access-Control-Allow-Origin: *
 Access-Control-Expose-Headers: *
 Timing-Allow-Origin: *
@@ -11,17 +10,15 @@ Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable
 Cross-Origin-Resource-Policy: cross-origin
 X-Content-Type-Options: nosniff
 Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Content-Type: text/css; charset=utf-8
 X-JSD-Version: 6.4.0
 X-JSD-Version-Type: version
 ETag: W/"18e89-jAbYJznRSwlP9tkDYCGiUr0dmF0"
-X-Served-By: cache-fra-eddf8230135-FRA, cache-yyz4540-YYZ
+Accept-Ranges: bytes
+Date: Mon, 05 Jun 2023 09:29:03 GMT
+Age: 1738814
+X-Served-By: cache-fra-eddf8230135-FRA, cache-hnd18735-HND
 X-Cache: HIT, HIT
 Vary: Accept-Encoding
-alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-CF-Cache-Status: HIT
-Age: 8863
-Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=sgaaOXW7W08EuRsZKlowgANa3h3z1l90xCNJ2QAeao%2FtGDqcRCzHTVLtwMlA4pLHeRm3AUW9xjEhn%2Bfvb8ZrBcqOY5l4auztTs7DaYyNzgWVa4y1EHLjl4DEekx%2B8244ta4%3D"}],"group":"cf-nel","max_age":604800}
-NEL: {"success_fraction":0.01,"report_to":"cf-nel","max_age":604800}
-Server: cloudflare
-CF-RAY: 7b26f6b03ca61ed0-NRT
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
 

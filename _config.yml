@@ -334,7 +334,7 @@ follow_me:
 # Contact through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon || desc` (Font Awesome)
 contact_me:
-  WeChat: /img/wx-group-qr-technology.png || fab fa-weixin || 欢迎加入微信群
+  WeChat: /img/wx_account_qr.png || fab fa-weixin || 欢迎添加博主微信，请备注 "博客"，届时会邀请您加入微信群
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts

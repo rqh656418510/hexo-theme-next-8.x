@@ -260,7 +260,7 @@ footer:
     # The digit in the num of gongan beian.
     gongan_id: '44011302004035'
     # The full num of gongan beian.
-    gongan_num: '粤公网安备 44011302004035号'
+    gongan_num: '粤公网安备 44011302004035 号'
     # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
     gongan_icon_url: 'img/gonganbeian.png'
 

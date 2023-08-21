@@ -61,7 +61,7 @@ darkmode_js:
   saveInCookies: true # default: true
   label: '🌓' # default: ''
   autoMatchOsTheme: true # default: true
-  libUrl: 'https://www.techgrow.cn/lib/darkmode-js.min.js' # Set custom library cdn url for Darkmode.js
+  libUrl: 'https://www.techgrow.cn/lib/darkmode/darkmode.min.js' # Set custom library cdn url for Darkmode.js
 
 
 # ---------------------------------------------------------------
@@ -815,10 +815,10 @@ waline:
   serverURL: https://waline.techgrow.cn:9360
 
   # Waline library CDN url, you can set this to your preferred CDN
-  libUrl: https://www.techgrow.cn/lib/waline/waline@2.5.1.min.js
+  libUrl: https://www.techgrow.cn/lib/@waline/client/client@2.5.1.min.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
-  cssUrl: https://www.techgrow.cn/lib/waline/waline@2.5.1.min.css
+  cssUrl: https://www.techgrow.cn/lib/@waline/client/client@2.5.1.min.css
   
   # Custom locales
   locale:

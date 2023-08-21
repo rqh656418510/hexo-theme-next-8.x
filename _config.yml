@@ -810,11 +810,11 @@ waline:
   serverURL: https://waline.techgrow.cn:9360
 
   # Waline library CDN url, you can set this to your preferred CDN
-  libUrl: https://unpkg.com/@waline/client@2.5.1/dist/waline.js
+  libUrl: https://www.techgrow.cn/lib/waline/waline.min.js
 
   # Waline CSS styles CDN url, you can set this to your preferred CDN
-  cssUrl: https://unpkg.com/@waline/client@2.5.1/dist/waline.css
-
+  cssUrl: https://www.techgrow.cn/lib/waline/waline.min.css
+  
   # Custom locales
   locale:
     # Comment box placeholder

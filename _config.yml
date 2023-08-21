@@ -61,7 +61,7 @@ darkmode_js:
   saveInCookies: true # default: true
   label: '🌓' # default: ''
   autoMatchOsTheme: true # default: true
-  libUrl: 'https://www.techgrow.cn/lib/darkmode/darkmode.min.js' # Set custom library cdn url for Darkmode.js
+  libUrl: 'https://www.techgrow.cn/lib/darkmode/darkmode@1.5.7.min.js' # Set custom library cdn url for Darkmode.js
 
 
 # ---------------------------------------------------------------

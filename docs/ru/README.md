@@ -39,15 +39,15 @@
 If you're using Hexo 5.0 or later, the simplest way to install is through npm:
 
 ```sh
-$ cd hexo-site
-$ npm install hexo-theme-next
+cd hexo-site
+npm install hexo-theme-next
 ```
 
 Or you can clone the entire repository:
 
 ```sh
-$ cd hexo-site
-$ git clone https://github.com/next-theme/hexo-theme-next themes/next
+cd hexo-site
+git clone https://github.com/next-theme/hexo-theme-next themes/next
 ```
 
 See [detailed installation instructions][docs-installation-url] if you want any other variant.
@@ -97,15 +97,15 @@ NexT выпускает новые версии каждый месяц. Please 
 Install the latest version through npm:
 
 ```sh
-$ cd hexo-site
-$ npm install hexo-theme-next@latest
+cd hexo-site
+npm install hexo-theme-next@latest
 ```
 
 Or update to the latest master branch:
 
 ```sh
-$ cd themes/next
-$ git pull
+cd themes/next
+git pull
 ```
 
 **Если нужно обновиться с версии v5.x / v7.x на последней версиями, читаем [здесь][docs-upgrade-url].**
@@ -147,7 +147,13 @@ Also, we welcome Issue or PR to our [official-plugins][official-plugins-url].
 
 > Netlify allows us to distribute the documentation.
 
-<a href="https://crowdin.com"><img height="40" src="https://support.crowdin.com/assets/logos/crowdin-logo-small-black.svg"></a>
+<a href="https://crowdin.com">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" height="40" srcset="https://support.crowdin.com/assets/logos/core-logo/svg/crowdin-core-logo-cWhite.svg">
+    <source media="(prefers-color-scheme: light)" height="40" srcset="https://support.crowdin.com/assets/logos/core-logo/svg/crowdin-core-logo-cDark.svg">
+    <img alt="Netlify Logo" height="40" src="https://support.crowdin.com/assets/logos/core-logo/svg/crowdin-core-logo-cDark.svg">
+  </picture>
+</a>
 
 > Crowdin allows us to translate conveniently the documentation.
 

@@ -140,16 +140,18 @@ menu_settings:
 # ---------------------------------------------------------------
 
 sidebar:
-  # Sidebar Position.
+  # Sidebar position. Available values: left | right
   position: left
-  # position: right
 
-  # Manual define the sidebar width. If commented, will be default for:
-  # Muse | Mist: 320
-  # Pisces | Gemini: 240
-  width: 300
+  # Sidebar width.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  width_expanded: 320
+  # Applicable to desktop of Pisces | Gemini.
+  width_dual_column: 240
 
-  # Sidebar Display (only for Muse | Mist), available values:
+  # Sidebar display.
+  # Applicable to Muse | Mist and mobile of Pisces | Gemini.
+  # Available values:
   #  - post    expand on posts automatically. Default.
   #  - always  expand for all pages automatically.
   #  - hide    expand only when click on the sidebar toggle icon.
@@ -254,7 +256,7 @@ footer:
     # Whether to show on the mobile side
     mobile: false
 
-  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, http://www.beian.gov.cn
+  # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: true
     icp: '粤 ICP 备 19024664 号'
@@ -262,7 +264,7 @@ footer:
     gongan_id: '44011302004035'
     # The full num of gongan beian.
     gongan_num: '粤公网安备 44011302004035 号'
-    # The icon for gongan beian. See: http://www.beian.gov.cn/portal/download
+    # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: 'img/gonganbeian.png'
 
 
@@ -910,6 +912,8 @@ google_analytics:
   # By default, NexT will load an external gtag.js script on your site.
   # If you only need the pageview feature, set the following option to true to get a better performance.
   only_pageview: false
+  # only needed if you are using `only_pageview` mode, https://developers.google.com/analytics/devguides/collection/protocol/ga4
+  measure_protocol_api_secret:
 
 # Baidu Analytics
 # See: https://tongji.baidu.com
@@ -999,9 +1003,6 @@ algolia_search:
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
   enable: false
-  # If auto, trigger search by changing input.
-  # If manual, trigger search by pressing enter key or search button.
-  trigger: auto
   # Show top n results per article, show all results by setting to -1
   top_n_per_article: 1
   # Unescape html strings to the readable one.

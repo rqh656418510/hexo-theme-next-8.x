@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-next",
-  "version": "8.18.0",
+  "version": "8.20.0",
   "description": "Elegant and powerful theme for Hexo.",
   "main": "package.json",
   "files": [
@@ -32,15 +32,15 @@
   },
   "homepage": "https://theme-next.js.org",
   "devDependencies": {
-    "@next-theme/eslint-config": "0.0.3",
-    "c8": "8.0.1",
-    "chai": "4.3.7",
-    "eslint": "8.46.0",
-    "hexo": "6.3.0",
-    "hexo-renderer-marked": "6.1.1",
+    "@next-theme/eslint-config": "0.0.4",
+    "c8": "9.1.0",
+    "chai": "4.4.1",
+    "eslint": "9.1.1",
+    "hexo": "7.2.0",
+    "hexo-renderer-marked": "6.3.0",
     "js-yaml": "4.1.0",
-    "mocha": "10.2.0",
-    "stylelint": "15.10.2",
-    "stylelint-stylus": "0.18.0"
+    "mocha": "10.4.0",
+    "stylelint": "16.4.0",
+    "stylelint-stylus": "1.0.0"
   }
 }

@@ -18,6 +18,7 @@ hexo.extend.helper.register('next_config', function() {
     version   : this.next_version,
     exturl    : theme.exturl,
     sidebar   : theme.sidebar,
+    hljswrap  : theme.highlight.enable && config.highlight.wrap,
     copycode  : theme.codeblock.copy_button,
     fold      : theme.codeblock.fold,
     bookmark  : theme.bookmark,
@@ -27,7 +28,7 @@ hexo.extend.helper.register('next_config', function() {
     comments  : theme.comments,
     stickytabs: theme.tabs.sticky,
     motion    : theme.motion,
-    prism     : config.prismjs.enable && !config.prismjs.preprocess,
+    prism     : theme.prism.enable && !config.prismjs.preprocess,
     i18n      : {
       placeholder: __('search.placeholder'),
       empty      : __('search.empty', '${query}'),

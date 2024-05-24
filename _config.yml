@@ -434,11 +434,11 @@ codeblock:
     height: 500
 
 back2top:
-  enable: true
+  enable: false
   # Back to top in sidebar.
-  sidebar: true
+  sidebar: false
   # Scroll percent label in b2t button.
-  scrollpercent: true
+  scrollpercent: false
 
 # Reading progress bar
 reading_progress:

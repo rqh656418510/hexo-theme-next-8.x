@@ -872,7 +872,7 @@ waline:
   copyright: false
 
   # Allow upload picture
-  allowUploadImage: true
+  allowUploadImage: false
 
   # Print the error message of the picture uploaded by qiniu
   qiniuDebug: false

@@ -120,7 +120,7 @@ menu:
   links: /links || fas fa-link
   #openPlatform: https://open.techgrow.cn/ || fa fa-toolbox
   readingNotes: https://www.techgrow.cn/reading/ || fa fa-book-open-reader
-  commentManage: https://waline.techgrow.cn:9360/ui/login?lng=zh-cn || fa fa-comment
+  commentManage: https://waline.techgrow.cn/ || fa fa-comment
   #archives: /archives/ || fa fa-archive
   #about: /about/ || fa fa-user
   #categories: /categories/ || fa fa-th

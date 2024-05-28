@@ -814,7 +814,7 @@ waline:
   enable: true
 
   # Waline server address url, you should set this to your own link
-  serverURL: https://waline.techgrow.cn:9360
+  serverURL: https://waline.techgrow.cn
 
   # Waline library CDN url, you can set this to your preferred CDN
   libUrl: https://www.techgrow.cn/lib/@waline/client/client@2.5.1.min.js

@@ -872,13 +872,13 @@ waline:
   copyright: false
 
   # Allow upload picture
-  allowUploadImage: false
+  allowUploadImage: true
 
   # Print the error message of the picture uploaded by qiniu
   qiniuDebug: false
 
   # The custom domain for qiniu
-  qiniuDomain: https://qiniu.techgrow.cn
+  qiniuDomain: https://oss.techgrow.cn
 
   # The api to get qiniu token
   qiniuTokenUrl: https://open.techgrow.cn/app/api/qiniu/token/upload

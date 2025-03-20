@@ -129,6 +129,10 @@ NexT.utils = {
       if (needFold && !target.classList.contains('unfold')) {
         target.classList.add('highlight-fold');
         target.insertAdjacentHTML('beforeend', '<div class="fold-cover"></div><div class="expand-btn"><i class="fa fa-angle-down fa-fw"></i></div>');
+        target.querySelector('.fold-cover').addEventListener('click', () => {
+          target.classList.remove('highlight-fold');
+          target.classList.add('unfold');
+        });
         target.querySelector('.expand-btn').addEventListener('click', () => {
           target.classList.remove('highlight-fold');
           target.classList.add('unfold');

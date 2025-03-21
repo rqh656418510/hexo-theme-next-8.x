@@ -881,7 +881,7 @@ waline:
   qiniuDomain: https://oss.techgrow.cn
 
   # The api to get qiniu token
-  qiniuTokenUrl: https://open.techgrow.cn/api/qiniu/token/upload
+  qiniuTokenUrl: https://open.techgrow.cn/api/oss/qiniu/token/upload
 
   # The custom library url for qiniu javascript sdk
   qiniuLibUrl: https://www.techgrow.cn/lib/qiniu/qiniu@3.3.1.min.js

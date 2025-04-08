@@ -259,11 +259,11 @@ footer:
   # Beian ICP and gongan information for Chinese users. See: https://beian.miit.gov.cn, https://beian.mps.gov.cn
   beian:
     enable: true
-    icp: '粤 ICP 备 19024664 号'
+    icp: '粤ICP备 19024664号-1'
     # The digit in the num of gongan beian.
     gongan_id: '44011302004035'
     # The full num of gongan beian.
-    gongan_num: '粤公网安备 44011302004035 号'
+    gongan_num: '粤公网安备 44011302004035号'
     # The icon for gongan beian. Login and See: https://beian.mps.gov.cn/web/business/businessHome/website
     gongan_icon_url: 'img/gonganbeian.png'
 

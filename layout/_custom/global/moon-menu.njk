@@ -1,24 +1,23 @@
 {%- if config.moon_menu.code and config.moon_menu.code.enable %}
 <script>
-// 防止 Pjax 重复绑定事件
-if (!window.__moonMenuCodeExpandBound) {
+  (function () {
+
+  // 防止 Pjax 重复绑定事件
+  if (window.__moonMenuCodeExpandBound) {
+    return;
+  }
   window.__moonMenuCodeExpandBound = true;
 
-  // 设置所有按钮的标题
+  const STORAGE_KEY = 'moon_menu_code_fold';
+
+  /* ===============================
+   * 1. 设置 moon-menu 按钮的 title
+   * =============================== */
   (function bindMoonMenuTitles() {
     const items = [
-      {
-        selector: '#moon-menu-item-code',
-        title: '展开 / 折叠代码块'
-      },
-      {
-        selector: '#moon-menu-item-back2top',
-        title: '回到页面顶部'
-      },
-      {
-        selector: '#moon-menu-item-back2bottom',
-        title: '回到页面底部'
-      }
+      { selector: '#moon-menu-item-code',        title: '展开 / 折叠代码块' },
+      { selector: '#moon-menu-item-back2top',    title: '回到页面顶部' },
+      { selector: '#moon-menu-item-back2bottom', title: '回到页面底部' }
     ];
 
     let allReady = true;
@@ -32,22 +31,69 @@ if (!window.__moonMenuCodeExpandBound) {
       el.setAttribute('title', item.title);
     });
 
-    // 如果有任何一个按钮还没出现，继续等待
     if (!allReady) {
       setTimeout(bindMoonMenuTitles, 100);
     }
   })();
 
-  // 绑定按钮事件
-  document.addEventListener('click', function (e) {
-    const codeMenu = e.target.closest('#moon-menu-item-code');
-    if (codeMenu) {
-      // 折叠或展开所有代码块
-      toggleAllCodeBlocks();
+  /* =================================
+   * 2. 页面首次加载：代码块恢复展开或折叠状态
+   * ================================= */
+  function applyStoredCodeState() {
+    const containers = document.querySelectorAll('.code-container');
+    if (!containers.length) {
+      return;
     }
+
+    const state = localStorage.getItem(STORAGE_KEY);
+    if (!state) {
+      return;
+    }
+
+    containers.forEach(container => {
+      if (state === 'expanded') {
+        // 展开代码块
+        container.classList.remove('highlight-fold');
+      } else if (state === 'folded') {
+        // 折叠代码块
+        container.classList.add('highlight-fold');
+      }
+    });
+  }
+
+  // 等代码块出现后，再恢复展开或折叠状态
+  function waitAndApplyState() {
+    const containers = document.querySelectorAll('.code-container');
+
+    if (!containers.length) {
+      setTimeout(waitAndApplyState, 100);
+      return;
+    }
+
+    applyStoredCodeState();
+  }
+
+  // 页面首次加载时恢复状态
+  waitAndApplyState();
+  
+  // Pjax 切换页面后，必须重新恢复状态
+  document.addEventListener('pjax:complete', function () {
+    waitAndApplyState();
   });
 
-  // 折叠或展开所有代码块
+  /* ===============================
+   * 3. 点击按钮：切换状态并保存
+   * =============================== */
+  document.addEventListener('click', function (e) {
+    const codeMenu = e.target.closest('#moon-menu-item-code');
+    if (!codeMenu) {
+      return;
+    }
+
+    toggleAllCodeBlocks();
+  });
+
+  // 展开或折叠代码块
   function toggleAllCodeBlocks() {
     const containers = document.querySelectorAll('.code-container');
     if (!containers.length) {
@@ -55,9 +101,9 @@ if (!window.__moonMenuCodeExpandBound) {
     }
 
     // 只要存在折叠的代码块，就认为当前是折叠状态
-    const hasFolded = Array.from(containers).some(
-      c => c.classList.contains('highlight-fold')
-    );
+    const hasFolded = Array.from(containers).some(c => {
+      return c.classList.contains('highlight-fold');
+    });
 
     containers.forEach(container => {
       if (hasFolded) {
@@ -68,8 +114,14 @@ if (!window.__moonMenuCodeExpandBound) {
         container.classList.add('highlight-fold');
       }
     });
+
+    // 记录展开或折叠状态
+    localStorage.setItem(
+      STORAGE_KEY,
+      hasFolded ? 'expanded' : 'folded'
+    );
   }
 
-}
+})();
 </script>
 {%- endif %}

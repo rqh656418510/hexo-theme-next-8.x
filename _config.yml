@@ -119,8 +119,9 @@ menu:
   search: /search || fa fa-search
   links: /links || fas fa-link
   #readingNotes: https://www.techgrow.cn/reading/ || fa fa-book-open-reader
-  interviewGuide: https://www.techgrow.cn/interview/ || fa fa-book-open-reader
+  interviewGuide: https://www.techgrow.cn/interview/ || fa fa-user-tie
   commentManage: https://waline.techgrow.cn/ || fa fa-comment
+  wechatEditor: https://www.techgrow.cn/md/ || fa fa-edit
   #archives: /archives/ || fa fa-archive
   #about: /about/ || fa fa-user
   #categories: /categories/ || fa fa-th

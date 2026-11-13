@@ -1,13 +1,16 @@
+{%- set adsense_head_script_inserted = config.google_adsense and config.google_adsense.enable and config.google_adsense.publisher_id -%}
 {%- if not is_index and config.google_adsense and config.google_adsense.enable and config.google_adsense.article_footer and not post.unads %}
   <div style="text-align:center">
+    {%- if not adsense_head_script_inserted %}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    {%- endif %}
     <ins class="adsbygoogle"
          style="display:block"
          data-ad-client="{{ config.google_adsense.publisher_id }}"
          data-ad-slot="7586134725"
          data-ad-format="auto"
          data-full-width-responsive="true"></ins>
-    <script>
+    <script data-pjax>
          (adsbygoogle = window.adsbygoogle || []).push({});
     </script>
   </div>

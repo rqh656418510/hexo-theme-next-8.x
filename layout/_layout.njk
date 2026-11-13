@@ -6,6 +6,7 @@
   {%- include '_partials/head/head-unique.njk' -%}
   <title>{% block title %}{% endblock %}</title>
   {{ partial('_third-party/analytics/index.njk', {}, {cache: theme.cache.enable}) }}
+  {{ partial('_custom/global/google-adsense.njk', {}, {cache: theme.cache.enable}) }}
   {{- next_inject('head') }}
   <noscript>
     <link rel="stylesheet" href="{{ url_for(theme.css) }}/noscript.css">
